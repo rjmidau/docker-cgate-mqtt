@@ -1,3 +1,11 @@
+## NOTE:
+
+This is a fork of the great work of the1laz. This code has been modified to better support Home Assistant, in particular:
+- Dimming from Home Assistant
+- MQTT Discovery to auto discover services on the C-Bus network. This requires the 'getallonstart' option to be enabled.
+
+
+
 cgateweb
 ========
 
