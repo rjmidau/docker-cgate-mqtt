@@ -391,8 +391,8 @@ function sendDiscoveryMessage(deviceClass, networkId, serviceId, unitId) {
   if (discoverySent.includes(uniqueId)) return;
   if (logging == true) console.log('Sending Hass discovery message');
   let payload = {
-    name: `${uniqueId}_light`,
-    unique_id: `${uniqueId}_light`,
+    name: `${uniqueId}`,
+    unique_id: `${uniqueId}`,
     state_topic: `homeassistant/cbus/read/${networkId}/${serviceId}/${unitId}/state`,
     command_topic: `homeassistant/cbus/write/${networkId}/${serviceId}/${unitId}/switch`,
     brightness_state_topic: `homeassistant/cbus/read/${networkId}/${serviceId}/${unitId}/level`,
