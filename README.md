@@ -8,7 +8,7 @@ This is a fork of the great work of the1laz and natemason.
 ```bash
 docker create \
     --name cgate-mqtt \
-    -v path/to/config.js:/usr/src/app/config.js \
+    -v path/to/settings.js:/usr/src/app/settings.js \
     --restart unless-stopped \
     rjmidau/cgate-mqtt:$TAG
 ```
@@ -22,7 +22,7 @@ services:
     image: rjmidau/cgate-mqtt:$TAG
     container_name: cgate-mqtt
     volumes:
-      - path/to/config.js:/usr/src/app/config.js
+      - path/to/settings.js:/usr/src/app/settings.js
     restart: unless-stopped
 ```
 
